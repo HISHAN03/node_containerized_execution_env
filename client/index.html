@@ -9,17 +9,17 @@
 </head>
 
 <body>
-
     <section spellcheck="false">
-
+        
         <textarea type="text" id="code" spellcheck=”false” placeholder="Write Your Code Here..."></textarea>
-
+        
         <div class="optionBtn">
             <select name="code" id="select-lang" onchange="changeLanguage()">
                 <option value="js"> JavaScript </option>
                 <option value="c"> C </option>
                 <option value="cpp"> C++ </option>
             </select>
+            
             <button onclick="runCode()" id="runCode"> run </button>
         </div>
 
@@ -33,10 +33,12 @@
 </body>
 
 <script>
+ 
     let language = document.getElementById("select-lang").value;
 
-    function changeLanguage(){
-        language = document.getElementById("select-lang").value;
+    function changeLanguage()
+    {
+    language = document.getElementById("select-lang").value;
     }
 
     async function runCode() {
