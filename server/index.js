@@ -118,9 +118,7 @@ async function createDockerContainer(language, code) {
   }
   // same as docker create --image imageName --tty --command cmdToRun
   const container = await docker.createContainer(containerConfig) 
-  
   return container;
-
 }
 
 // helper fun to get image according to user Selected language
